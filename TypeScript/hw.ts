@@ -1,3 +1,8 @@
+// @ts-check
+//npm install typescript --save-dev
+//npm install --save-dev ts-node
+//npx ts-node hw.ts
+
 console.log("Hello World");
 
 let cadena: string = "Hola Mundo";
@@ -37,6 +42,7 @@ for (let key of myList3.keys()) {
     console.log(key);
 }
 
+
 //Clases
 class Persona {
     private nombre: string;
@@ -66,3 +72,15 @@ interface SquareConfig {
 //Probar interfaz
 let mySquare: SquareConfig = {color: "red", width: 100};
 console.log(mySquare);
+
+
+
+type Result = "pass" | "fail"
+ 
+function verify(result: Result) {
+  if (result === "pass") {
+    console.log("Passed")
+  } else {
+    console.log("Failed")
+  }
+}
