@@ -2,19 +2,23 @@
 //npm install typescript --save-dev
 //npm install --save-dev ts-node
 //npx ts-node hw.ts
+//npx tsc .\hw.ts --downlevelIteration
 
 console.log("Hello World");
 
 let cadena: string = "Hola Mundo";
 console.log(cadena);
 console.log(typeof cadena);
-print();
+printMessage();
 
-function suma(a: number, b: number): number {
+// or
+// import { Set } from 'es6-set';
+
+function sum(a: number, b: number): number {
     return a + b;
 }
 
-function print() {
+function printMessage(): void {
     console.log("Print");
 }
 
@@ -60,8 +64,8 @@ console.log(persona);
 console.log(persona.name);
 
 //Enums
-enum Color {Red, Green, Blue};
-let c: Color = Color.Green;
+enum Colors {Red, Green, Blue};
+let c: Colors = Colors.Green;
 console.log(c);
 
 //interfaces
@@ -77,7 +81,7 @@ console.log(mySquare);
 
 type Result = "pass" | "fail"
  
-function verify(result: Result) {
+function verifys(result: Result) {
   if (result === "pass") {
     console.log("Passed")
   } else {
